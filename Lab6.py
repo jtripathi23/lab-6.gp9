@@ -4,18 +4,16 @@ def decode(encoded_string):
         try:
             temp = int(encoded_string[i])
             if temp < 3:
-                print("Invalid encoded string")
                 decoded_string =""
                 break
             decoded_string += str(temp-3)
         except:
-            print("Invalid encoded string")
             decoded_string = ""
             break
     return decoded_string
-encode_decode_menu = ("Menu\n"
-                      "-------------\n"
-                      "1. Encode\n"
-                      "2. Decode\n"
-                      "3. Quit")
-print(encode_decode_menu)
+#encode_decode_menu = ("Menu\n"
+#                      "-------------\n"
+#                      "1. Encode\n"
+#                      "2. Decode\n"
+#                      "3. Quit")
+#print(encode_decode_menu)
